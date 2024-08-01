@@ -1,0 +1,16 @@
+Singleton
+
+Purpose: Ensures that a class has only one instance and provides a global point of access to it.
+Implementation: Typically involves a private constructor, a static method to get the instance, and a static variable to hold the instance.
+State: The single instance can have mutable state, meaning its fields can be changed after the instance is created.
+Usage: Commonly used for managing shared resources like configuration settings, logging, or connection pools.
+Immutability
+
+Purpose: Ensures that an object’s state cannot be changed after it is created.
+Implementation: Typically involves making all fields final, providing no setters, and ensuring that any mutable objects passed to the constructor are deeply copied.
+State: The object’s state is fixed after construction and cannot be altered.
+Usage: Commonly used for value objects, thread-safe data structures, and functional programming.
+Summary
+
+Singleton: Focuses on having a single instance of a class with potentially mutable state.
+Immutability: Focuses on creating objects whose state cannot change after they are constructed.
